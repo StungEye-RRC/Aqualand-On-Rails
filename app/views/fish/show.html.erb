@@ -1,2 +1,11 @@
-<h1>Fish#show</h1>
-<p>Find me in app/views/fish/show.html.erb</p>
+<div class="fish">
+    <p>
+      <b>Name: </b> <%= link_to @fish.name, @fish %>
+    </p>
+    <p>
+      <b>Scientific Name: </b> <%= @fish.scientific_name %>
+    </p>
+    <p>
+      <b>Weight: </b> <%= @fish.weight %>
+    </p>
+</div>
