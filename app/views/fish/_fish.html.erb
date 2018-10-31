@@ -1,7 +1,12 @@
 <div class="fish">
-  <p>
-    <b>Name: </b> <%= link_to fish.name, fish %>
-  </p>
+  <h2>
+    <%= link_to fish.name, fish %>
+  </h2>
+  <% if fish.image.present? %>
+    <p>
+      <%= image_tag fish.image.url %>
+    </p>
+  <% end %>
   <p>
     <b>Scientific Name: </b> <%= fish.scientific_name %>
   </p>
