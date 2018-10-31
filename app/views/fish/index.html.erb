@@ -1,15 +1,7 @@
 <h1>AQUALAND</h1>
 
-<% @fish_collection.each do |fish| %>
-  <div class="fish">
-    <p>
-      <b>Name: </b> <%= link_to fish.name, fish %>
-    </p>
-    <p>
-      <b>Scientific Name: </b> <%= fish.scientific_name %>
-    </p>
-    <p>
-      <b>Weight: </b> <%= fish.weight %>
-    </p>
-  </div>
-<% end %>
+<%= render @fish_collection %>
+
+<!-- The long form version of render for a collection:
+  <%= render partial: 'fish', collection: @fish_collection %>
+-->
