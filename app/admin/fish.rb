@@ -1,0 +1,3 @@
+ActiveAdmin.register Fish do
+  permit_params :name, :scientific_name, :weight
+end
