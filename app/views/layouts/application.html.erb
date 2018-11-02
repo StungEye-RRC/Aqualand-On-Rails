@@ -9,9 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <header>
-      <h1>AQUALAND</h1>
-    </header>
+    <%= render partial: 'shared/header' %>
     <%= yield %>
   </body>
 </html>
