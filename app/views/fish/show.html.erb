@@ -1,3 +1,5 @@
-<%= render @fish %>
+<%= render partial: 'fish',
+           object: @fish,
+           locals: { show_link: false } %>
 
 <%= link_to 'All Fish', root_path %>

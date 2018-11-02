@@ -1,7 +1,3 @@
-<h1>AQUALAND</h1>
-
-<%= render @fish_collection %>
-
-<!-- The long form version of render for a collection:
-  <%= render partial: 'fish', collection: @fish_collection %>
--->
+<%= render partial: 'fish', # /views/fish/_fish.html.erb
+           collection: @fish_collection,
+           locals: { show_link: true } %>

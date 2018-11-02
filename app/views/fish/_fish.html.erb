@@ -1,9 +1,13 @@
 <div class="fish">
   <h2>
-    <%= link_to fish.name, fish %>
+    <% if show_link %>
+      <%= link_to fish.name, fish %>
+    <% else %>
+      <%= fish.name %>
+    <% end %>
   </h2>
   <% if fish.image.present? %>
-    <p>
+    <p >
       <%= image_tag fish.image.url %>
     </p>
   <% end %>
